@@ -1,131 +1,227 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for the City Dash mobile game.">
-  <title>City Dash - Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for City Dash, an Android game published by Lyamba Ilukena.">
+  <meta name="theme-color" content="#07121e">
+  <title>City Dash Privacy Policy</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 850px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-      color: #222;
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      color: #1b2430;
+      background: #f3f6fa;
     }
-    h1, h2 { color: #173b65; }
-    a { overflow-wrap: anywhere; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+    article {
+      padding: clamp(20px, 5vw, 42px);
+      background: #fff;
+      border: 1px solid #dce3eb;
+      border-radius: 12px;
+    }
+    h1, h2 { color: #173b65; line-height: 1.3; }
+    h1 { font-size: clamp(2rem, 6vw, 2.7rem); margin: 0 0 12px; }
+    h2 { font-size: 1.35rem; margin: 2rem 0 0.65rem; }
+    p, li { font-size: 1rem; }
+    a { color: #075da8; overflow-wrap: anywhere; }
+    ul { padding-left: 1.35rem; }
+    .meta { color: #4b5b6d; }
   </style>
 </head>
 <body>
-  <h1>City Dash - Privacy Policy</h1>
-  <p><strong>Effective date:</strong> October 10, 2026</p>
-  <p><strong>Last updated:</strong> October 10, 2026</p>
+  <main>
+    <article>
+      <h1>City Dash Privacy Policy</h1>
+      <p class="meta">
+        <strong>Effective date:</strong> October 11, 2026<br>
+        <strong>Last updated:</strong> October 11, 2026
+      </p>
 
-  <p>This Privacy Policy explains how City Dash, a mobile game,
-  may process information when you use the app. Please read this
-  policy before playing.</p>
+      <p>
+        This policy describes information processed by City Dash, an Android game,
+        based on the app implementation and third-party SDK configuration reviewed
+        for this version.
+      </p>
 
-  <h2>1. Publisher and Contact</h2>
-  <p>City Dash is published by Lyamba Ilukena.</p>
-  <p>Privacy questions:lyambailukena2@gmail.com</p>
+      <h2>1. Publisher and contact</h2>
+      <p>City Dash is published by Lyamba Ilukena.</p>
+      <p>
+        For privacy questions or requests, contact
+        <a href="mailto:lyambailukena2@gmail.com">lyambailukena2@gmail.com</a>.
+      </p>
 
-  <h2>2. Information and Device Data</h2>
-  
-<p>City Dash does not use your device's location for gameplay and does not request Android location permissions. The game does not access your device's GPS location to provide its gameplay features.</p>
+      <h2>2. Information processed by the app</h2>
+      <p>
+        The app stores the audio setting, best score, and virtual-coin balance
+        locally on the device using Android app preferences. Gameplay values such
+        as the current run's score are used while playing. The inspected code
+        contains no app account, sign-in, or custom backend feature, and no
+        implementation that sends these game values to a publisher-operated
+        server.
+      </p>
+      <p>
+        The app uses Google Mobile Ads to request and display banner, interstitial,
+        and rewarded ads. Google's current Google Play Data safety disclosure
+        for the Google Mobile Ads SDK (Legacy) describes automatic collection
+        and sharing of IP address; user product interactions, including app
+        launches, taps, and video views; diagnostic information about app and
+        SDK performance; and device or account identifiers, including Android
+        Advertising ID and App Set ID, and account-related identifiers where
+        applicable. Google states these data are used for advertising,
+        analytics, and fraud prevention. Data handled for a particular user
+        can depend on Google's services, device settings, and applicable
+        regional settings.
+      </p>
+      <p>
+        This project uses the google_mobile_ads Flutter plugin version 9.1.0.
+        Its default Android dependency in the inspected plugin build
+        configuration is Google Play services Ads SDK 25.4.0. Google's
+        currently published Data safety disclosure describes SDK version
+        25.5.0, so the publisher should recheck the disclosure for the exact
+        SDK included in the final release and update this policy if the data
+        practices differ. See
+        <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">
+          Google's Mobile Ads SDK Data safety disclosure</a>.
+      </p>
+      <p>
+        The Android manifest requests internet and network-state permissions for
+        network operation and advertising. It does not request Android location
+        permissions, and the inspected app code does not use device location
+        APIs for any game feature. However, Google documents that the Mobile Ads
+        SDK collects an IP address, which may be used to estimate a device's
+        general location. Therefore, City Dash does not use device location as
+        a game feature, but location may be inferred by Google's ad service from
+        network information. See
+        <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>
+        for Google's explanation of its data practices.
+      </p>
+      <p>
+        The inspected dependency list and app code show no Firebase Analytics,
+        Firebase Crashlytics, separate analytics SDK, location SDK, or publisher
+        backend. Other included libraries provide game rendering, audio playback,
+        and local preference storage; the reviewed code does not show them
+        transmitting game data to a separate service. This describes the
+        reviewed project configuration and may change if dependencies or app
+        features change.
+      </p>
 
-<p>City Dash may save certain preferences and gameplay-related settings locally on your device to support the app's functionality. These locally saved preferences may include settings needed to provide a consistent gameplay experience. The information stored locally depends on the features enabled in the version of the app you use.</p>
+      <h2>3. How information is used</h2>
+      <p>
+        Local game information is used to operate gameplay and preserve the
+        player's audio choice, best score, and coin balance between app sessions.
+        Information processed by Google Mobile Ads is used by Google and its
+        advertising services to provide and operate ads, which may include ad
+        delivery, measurement, security, and diagnostics according to Google's
+        settings and policies.
+      </p>
+      <p>
+        Rewarded ads can grant 25 virtual coins in the game. Virtual coins have
+        no cash value and cannot be redeemed for money.
+      </p>
 
-<p>City Dash may use Google's Mobile Ads SDK to display advertisements. When advertising services are enabled, Google Mobile Ads SDK may process certain information, depending on the SDK configuration, your device settings, and applicable consent requirements. This information may include:</p>
+      <h2>4. Sharing and third-party services</h2>
+      <p>
+        Ad requests and related information are sent to Google Mobile Ads and
+        may be processed by Google and relevant advertising service providers
+        to provide the ad service. The app source reviewed does not show a
+        publisher-operated service that receives gameplay records or account
+        information. Google's processing is described in
+        <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>
+        and
+        <a href="https://support.google.com/admob/">Google AdMob Help</a>.
+      </p>
 
-<ul>
-  <li><strong>IP address:</strong> May be processed to help estimate your general location, such as your country or region, for advertising-related purposes. City Dash does not use this estimate as device location for gameplay.</li>
-  <li><strong>Product interactions:</strong> Information about interactions with the app or advertisements, such as ad views, clicks, and related activity.</li>
-  <li><strong>Diagnostics:</strong> Information used to identify, investigate, and address technical problems, crashes, and performance issues.</li>
-  <li><strong>Device and account identifiers:</strong> Identifiers associated with your device or account that may be used for advertising, analytics, fraud prevention, or other purposes supported by the advertising service.</li>
-</ul>
+      <h2>5. Advertising choices and consent</h2>
+      <p>
+        Google provides advertising and privacy controls through device and
+        Google account settings; available controls can vary by location and
+        device. The app currently sends standard ad requests and does not
+        configure a non-personalized-ad request in the inspected code. Google
+        says Android Advertising ID collection can be controlled through
+        Android settings; Google's disclosure also describes App Set ID and,
+        where applicable, account-related identifiers.
+      </p>
+      <p>
+        The project contains Google User Messaging Platform consent code, but
+        its consent setting is currently disabled. As a result, the app does
+        not currently run that consent flow before initializing or requesting
+        ads. The publisher must review and configure the appropriate consent
+        experience for the intended audience and distribution regions before
+        release. See
+        <a href="https://developers.google.com/admob/flutter/privacy">Google's
+        AdMob privacy guidance for Flutter</a>.
+      </p>
 
-<p>The information actually processed depends on the features and software development kits (SDKs) included in the released version of City Dash, their configuration, your device settings, and applicable consent choices. Not every category listed above is necessarily collected in every instance.</p>
+      <h2>6. Retention and security</h2>
+      <p>
+        The app stores saved preferences in Android app storage. They may be
+        removed when app data is cleared or the app is uninstalled; Android
+        device backup or restore settings may also affect whether preferences
+        are retained or restored. Google determines retention for information
+        processed through its advertising services; consult Google's privacy
+        resources for details. No specific retention period for Google's data
+        is asserted here.
+      </p>
+      <p>
+        This app does not operate a publisher backend for the local game
+        preferences described above. Information sent to Google is subject to
+        Google's safeguards and practices. No security certification or
+        guarantee is claimed by this policy.
+      </p>
 
-<p>For more information about how Google processes data through its advertising services, please review Google's Privacy Policy at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a> and Google's information about <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">how Google uses information from sites or apps that use its services</a>.</p>
-```
+      <h2>7. Children</h2>
+      <p>
+        The reviewed app source does not contain an age gate or an in-app
+        audience declaration. The publisher must confirm the intended age
+        group and configure advertising and app distribution accordingly.
+        Additional requirements may apply if the app is directed to, or
+        knowingly used by, children.
+      </p>
 
+      <h2>8. Privacy rights and requests</h2>
+      <p>
+        Privacy rights and advertising choices depend on applicable Canadian
+        federal and provincial laws. Where available, these rights may include
+        requesting access to, correction of, or deletion of personal
+        information, or objecting to certain processing. The app currently
+        does not provide an in-app privacy request or advertising opt-out form.
+        Contact the publisher at
+        <a href="mailto:lyambailukena2@gmail.com">lyambailukena2@gmail.com</a>
+        to submit a privacy request. Information processed by Google may also
+        be subject to the controls and processes described by Google. You can
+        remove locally saved app data through Android's app settings; doing so
+        may delete saved game preferences and progress.
+      </p>
 
-  <p>Do not assume that every type of information listed here is
-  collected. The information actually processed depends on the
-  features and SDKs used in the released version of the app.</p>
+      <h2>9. International processing</h2>
+      <p>
+        Google may process information in locations outside your country as
+        described in its privacy materials. The app publisher does not operate
+        a separate service that stores the local game preferences remotely.
+      </p>
 
-  <h2>3. Advertising</h2>
-  <p>City Dash may display banner, interstitial, and rewarded
-  advertisements through Google AdMob. Google and its advertising
-  partners may process device identifiers, usage information,
-  diagnostic data, and other information as described in their
-  applicable policies and settings.</p>
-  <p>Rewarded advertisements may provide in-game rewards, such as
-  virtual coins, after the required ad interaction is completed.
-  These coins have no cash value and are not redeemable for money.</p>
-  <p>Google's advertising and privacy information is available at:
-    <a href="https://policies.google.com/privacy">
-      Google Privacy Policy
-    </a>
-    and
-    <a href="https://support.google.com/admob/">
-      Google AdMob Help
-    </a>.
-  </p>
+      <h2>10. Changes to this policy</h2>
+      <p>
+        This policy may be updated if the app, its SDKs, or its data practices
+        change. The current version and its effective date will be posted on
+        this page.
+      </p>
 
-  <h2>4. How Information May Be Used</h2>
-  <p>Information may be used to operate and maintain the game,
-  display advertisements, measure ad performance, diagnose errors,
-  prevent abuse, and improve app reliability, where applicable.</p>
-
-  <h2>5. Sharing of Information</h2>
-  <p>Information may be processed by service providers that support
-  the game, including advertising and diagnostic providers, as
-  applicable. Their processing is governed by their own terms and
-  privacy policies.</p>
-
-  <h2>6. Privacy Choices</h2>
-  <p>Depending on your location and applicable law, you may have
-  rights to request access to, correction of, or deletion of
-  personal information, or to object to certain processing.</p>
-  <p>Where required, advertising consent and privacy choices will
-  be provided through appropriate consent mechanisms. You can
-  also review Google's available advertising controls.</p>
-
-  <h2>7. Data Retention and Security</h2>
-  <p>Information is retained only as needed for the purposes for
-  which it is processed, subject to applicable legal requirements.
-  Reasonable safeguards should be used to protect information;
-  however, no method of transmission or storage is completely
-  secure.</p>
-
-  <h2>8. Children's Privacy</h2>
-  <p>City Dash is not intended to collect personal information
-  from children in violation of applicable law. If the game is
-  directed to children or is likely to be used by children,
-  additional child-safety, advertising, consent, and legal
-  requirements may apply.</p>
-
-  <h2>9. International Processing</h2>
-  <p>Service providers may process information in countries other
-  than your country of residence, subject to applicable laws and
-  safeguards.</p>
-
-  <h2>10. Third-Party Services</h2>
-  <p>The app may rely on third-party services whose privacy
-  practices are described in their own policies. Please review
-  those policies to understand their practices.</p>
-
-  <h2>11. Changes to This Policy</h2>
-  <p>This policy may be updated when the app, its services, or
-  legal requirements change. The latest version will be published
-  on this page with an updated date.</p>
-
-  <h2>12. Contact Us</h2>
-  <p>For privacy questions or requests, contact:
-     lyambailukena2@gmail.com</p>
+      <h2>11. Additional information</h2>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://support.google.com/admob/">Google AdMob Help</a></li>
+        <li><a href="https://developers.google.com/admob/flutter/privacy">Google AdMob privacy guidance for Flutter</a></li>
+      </ul>
+    </article>
+  </main>
 </body>
 </html>
